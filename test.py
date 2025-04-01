@@ -40,7 +40,7 @@ async def main():
     # )
     await agent.run(prompt)
 
-    logger.info("分析执行完成：")
+    logger.info("分析执行完成！")
     # logger.info(result)
 
 
