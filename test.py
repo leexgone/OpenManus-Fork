@@ -9,7 +9,7 @@ from app.agent.manus import Manus
 from app.logger import logger
 
 # from app.tool import Terminate, ToolCollection
-from app.tool.file_saver import FileSaver
+# from app.tool.file_saver import FileSaver
 from app.tool.python_execute import PythonExecute
 from app.tool.str_replace_editor import StrReplaceEditor
 from app.tool.web_search import WebSearch
@@ -26,7 +26,7 @@ async def main():
     agent = Manus()
     agent.available_tools.add_tools(
         WebSearch(),
-        FileSaver(),  # PythonExecute(), StrReplaceEditor()
+        # FileSaver(),  # PythonExecute(), StrReplaceEditor()
     )
     # agent.max_steps = 50
     # agent.available_tools = Field(
