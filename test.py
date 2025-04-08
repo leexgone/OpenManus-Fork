@@ -24,10 +24,10 @@ async def main():
     logger.info("开始执行分析...")
 
     agent = Manus()
-    agent.available_tools.add_tools(
-        WebSearch(),
-        # FileSaver(),  # PythonExecute(), StrReplaceEditor()
-    )
+    # agent.available_tools.add_tools(
+    #     WebSearch(),
+    #     # FileSaver(),  # PythonExecute(), StrReplaceEditor()
+    # )
     # agent.max_steps = 50
     # agent.available_tools = Field(
     #     default_factory=lambda: ToolCollection(
